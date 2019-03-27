@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+    <include package="plone.behavior" file="meta.zcml" />
+
+    <plone:behavior
+        title="Hero text"
+        description="Add a new rich text field for structured Hero informations that will be showed in static website."
+        provides=".hero.IHeroText"
+        />
+
+     <plone:behavior
+        name="ploneconf.herotext"
+        title="Hero text"
+        description="Add a new rich text field for structured Hero informations that will be showed in static website."
+        provides=".hero.IHeroTextBehavior"
+        factory=".hero.HeroText"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        marker=".hero.IHeroText"
+        />
+</configure>
