@@ -6,7 +6,7 @@
       <value>
       {
           "submitButton": {
-              "inline": "a",
+              "selector": "a",
               "classes": "submit-button"
           },
           "wrapSpan": {
@@ -14,12 +14,24 @@
               "classes": ""
           },
           "payoff": {
-              "inline": "p",
+              "block": "p",
               "classes": "payoff"
           },
           "subtitle": {
-              "inline": "p",
+              "block": "p",
               "classes": "subtitle"
+          },
+          "alignleft": {
+              "classes": "tinyAlignLeft",
+              "block": "p"
+          },
+          "aligncenter": {
+              "classes": "tinyAlignCenter",
+              "block": "p"
+          },
+          "alignright": {
+              "classes": "tinyAlignRight",
+              "block": "p"
           }
       }
       </value>
