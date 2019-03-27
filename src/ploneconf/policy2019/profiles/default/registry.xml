@@ -1,5 +1,29 @@
 <?xml version="1.0"?>
 <registry>
-<!-- -*- extra stuff goes here -*- -->
+
+  <record name="plone.formats" interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema" field="formats" purge="False">
+    <field type="plone.registry.field.Text" purge="False">
+      <value>
+      {
+          "submitButton": {
+              "inline": "a",
+              "classes": "submit-button"
+          },
+          "wrapSpan": {
+              "inline": "span",
+              "classes": ""
+          },
+          "payoff": {
+              "inline": "p",
+              "classes": "payoff"
+          },
+          "subtitle": {
+              "inline": "p",
+              "classes": "subtitle"
+          }
+      }
+      </value>
+    </field>
+  </record>
 
 </registry>
