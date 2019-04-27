@@ -1,5 +1,34 @@
 <?xml version="1.0"?>
 <registry>
-<!-- -*- extra stuff goes here -*- -->
+
+  <records interface="Products.CMFPlone.interfaces.controlpanel.IFilterSchema"
+           prefix="plone">
+    <value key="valid_tags"
+           purge="False">
+      <element>hr</element>
+    </value>
+  </records>
+
+  <records interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
+           prefix="plone">
+    <value key="block_styles"
+           purge="False">
+      <element>Submit Button|submit-button</element>
+    </value>
+     <value key="formats">{
+    "discreet": {
+        "inline": "span",
+        "classes": "discreet"
+    },
+    "clearfix": {
+        "block": "div",
+        "classes": "clearfix"
+    },
+    "submit-button": {
+        "block": "div",
+        "classes": "submit-button"
+    }
+}</value>
+  </records>
 
 </registry>
