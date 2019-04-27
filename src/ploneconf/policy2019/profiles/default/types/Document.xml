@@ -6,5 +6,6 @@
     purge="false">
   <property name="behaviors" purge="false">
     <element value="ploneconf.policy2019.behaviors.hero.IHeroTextBehavior"/>
+    <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImageBehavior"/>
   </property>
 </object>
