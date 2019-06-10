@@ -7,13 +7,18 @@
            purge="False">
       <element>hr</element>
     </value>
+    <value key="custom_attributes"
+           purge="False">
+      <element>role</element>
+      <element>style</element>
+    </value>
   </records>
 
   <records interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
            prefix="plone">
     <value key="block_styles"
            purge="False">
-      <element>Submit Button|submit-button</element>
+      <element>Submit Button|submitbutton</element>
     </value>
      <value key="formats">{
     "discreet": {
@@ -24,9 +29,12 @@
         "block": "div",
         "classes": "clearfix"
     },
-    "submit-button": {
-        "block": "div",
-        "classes": "submit-button"
+    "submitbutton": {
+        "selector": "a",
+        "classes": "btn btn-primary btn-lg",
+        "attributes": {
+            "role": "button"
+        }
     }
 }</value>
   </records>
